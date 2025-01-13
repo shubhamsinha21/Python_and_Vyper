@@ -1,0 +1,93 @@
+Mining - process of finding the solution to the blockchain problem.
+ex - to find a hash that starts with four zeroes
+nodes get paid for Mining blocks.
+
+BLOCk - is a list of Transactions mined together
+
+Decentralized - no single point of authority
+
+Nonce - a num used once to find solution to the blockchain problem.
+        Also, used to define the Transaction number for an account/address.
+
+
+# Signing Transactions - 
+
+Private key - only known to the key holder, it's used to sign transactions
+Public key - changes or set wrt Private key . It uses Elliptic curve digital signature algo
+                everyone has access to. Anyone can sue it to verify the transactions.
+        
+Signatures - we write text in msg and generates msg signature.
+In metamask, there is a seed phrase (also called mnemonic phrase)
+
+note - signing a transactions is a 1 way process. sometimes with a private key signs a transaction
+        by their private keu being hashed with their transaction data.
+
+
+note - Private key >>> Public key > address
+note - to create another hash and then create pvt key, hacker just neeed seed phrase and they do like this-
+        SHA 256 + 1 = pvt key
+
+
+note - seed phrase - access to all accounts created in wallet
+        private key - access to that particular account
+        address/public key - other can see your transaction history, its cool to have
+
+
+### How does Transaction Signing Happen?
+
+When we sign a transaction on the blockchain, we're digitally signing some data with our private key. The hashing algorithm used makes it impossible for something to derive your private key from a message signature.
+This signing method allows anyone to verify the validity of a transaction by comparing the message signature to a user's public key!
+
+# Gas in depth
+
+    more people use a chain, more gas fees
+    Eth converter website
+    burnt gas - used gas for the transaction
+
+# Blockchain overview
+[Hig level blockchain fundamentals]
+
+
+### Traditional Networks vs Blockchain
+
+Traditionally, when you run an application be it a website or something that connects to a server you are interacting with a centralized entity. This is the opposite of what you may recall from our distributed blockchain example, in that the server is controlled and run by a single centralized group.
+
+Blockchains, as we saw, run on a network of independent nodes. In our previous example, each of the `Peers` was representative of an independent `node` operator. The term `node` typically refers to a single instance of a decentralized system, Peer A would be a `node`. This network, this combination of these nodes interacting with each other is what creates a blockchain. What makes these networks so potent, is that anybody can join. All anyone needs is a little bit of hardware and you can participate in securing a blockchain network. You could go to GitHub and start operating a node in a few seconds!
+
+In the traditional world applications are run by centralized entities and if that entity goes down or is malicious or decides that they want to shut off - they just can. They're the ones that control everything.
+
+Blockchains, by contrast, don't have this problem. If one node or one entity that runs several nodes goes down, since there are so many other independent nodes running, it doesn't matter, the blockchain and the system will persist so long as there is at least one node always running. Luckily for us, the most popular chains like Bitcoin and Ethereum have thousands and thousands of nodes. Malicious nodes are kicked from the network, or even punished in some cases. Majority rules when it comes to the blockchain.
+
+This gives blockchains this incredibly potent immutability trait where nothing can be changed or corrupted so in essence we can think of a blockchain as a decentralized database. In the case of Ethereum it has an extra additional feature where it also can do computation in a decentralized manner now.
+
+
+Consensus -
+
+This includes `Proof of Work` and `Proof of Stake`.&#x20;
+The `mining` feature of our previous blockchain example was an example of `Proof of Work`
+
+`Proof of Work` and `Proof of Stake` fall under this umbrella of `consensus`
+
+`Consensus` is defined as the mechanism used to reach an agreement on the state or a single value on the blockchain especially in a decentralized system.
+
+note -  a consensus protocol in a blockchain or decentralized system can be broken down into two pieces: a chain selection algorithm and a sybil resistance mechanism. Mining, or Proof of Work, is a sybil resistance mechanism. This is what Bitcoin currently uses.
+
+## here are two primary types of sybil resistance:
+
+* Proof of Work
+* Proof of Stake
+
+
+POW -  Proof of work is a system of sybil resistance used in many blockchains, in its essence a miner needs to go through a very computationally heavy process (mining) to find the block's answer.
+         As a result, it doesn't matter how many additional nodes you're running, each node is obligated to do this work in order to receive a reward.
+
+         Proof of Work needs to be combined with a `chain selection rule` to create `consensus`.
+
+A `chain selection rule` is implemented as a means to determine which blockchain is the _real_ blockchain. Bitcoin (and prior to the merge, Ethereum), both use something called `Nakamoto Consensus`. This is a combination of Proof of Work (Etherum has since switched to Proof of Stake) and the `longest chain rule`.
+
+In the `longest chain rule`, the decentralized network decides that whichever chain has the most number of blocks will be the valid, or _real_ blockchain. When we saw `block confirmations` in Etherscan earlier, this was representing the number of blocks ahead of our transaction in the longest chain.
+
+
+Details of POW -:
+`Proof of Work` also serves as a means to determine who receives transaction fees as we discussed earlier. These transaction fees are paid by whomever initiates the transaction. In a Proof of Work system, every node is competing against eachother to solve the block problem first. The first node to solve the problem gets paid the transaction fees accumulated in the block they mine. In addition to this, miners are also paid a `block reward`, the `block reward` is given by the blockchain itself.
+

@@ -1,0 +1,72 @@
+BLOCKCHAIN ATTACKS -
+### Blockchain Attacks
+
+There are two major types of attacks that exist in the blockchain space.
+
+* Sybil Attack - When a user creates a number of pseudo-anonymous accounts to try to influence a network.
+* 51% attack - Occurs when a single entity possesses both the longest chain and majority network control. 
+This would allow the entity to `fork` the chain and bring the network onto the entities record of events, effectively allowing them to validate anything.
+
+
+note -
+Blockchains are very democratic. The bigger a blockchain is, the more decentralized, the more secure it becomes.
+
+Disadvantages of pow - Proof of Work does come with drawbacks. For example, Proof of Work consumes a LOT of electricity. 
+When you have thousands of nodes all working as hard as they can to solve a block problem the energy consumption is HUGE and as such, so is the potential environmental impact
+
+PROOF OF STAKE -
+
+In contrast to trying to solve a block problem, Proof of Stake nodes put up some collateral that they are going to behave honestly aka they `stake`. 
+If a node is found to be misbehaving, it's stake is slashed. This serves as a very effective sybil resistance mechanism because for each account, the validator needs to put up more stake and misbehaving risks losing all that collateral.
+
+> In a Proof of Stake system, `miners` are known as `validators`. They aren't actually mining blocks, they're validating other nodes.
+
+
+LAYER -1 AND LAYER -2
+1. `Layer 1` solutions: This refers to base layer blockchain implementations like Bitcoin or Ethereum.
+2. `Layer 2` solutions: These are applications added on top of a layer one, like [Chainlink](https://chain.link/) or [Arbitrum](https://arbitrum.io/).
+
+Layer 2s like Arbitrum and Optimism are special in that they're trying to solve the problem of scalability. 
+These protocols leverage something called `rollups`. We won't go too deep, but the idea is that the protocols bundle their transactions to be processed by a Layer 1.
+
+
+
+##### L1, L2 and rollups
+
+LAYER -1  ----------------
+
+
+A **Layer 1 (L1)** blockchain is the base layer of the blockchain ecosystem, where nodes help the chain to reach consensus. 
+It operates without any additional plugins and is often referred to as the _settlement layer_. Examples of L1 chains include Bitcoin, 
+BNB Chain, Solana, and Avalanche. In this course, we primarily focus on Ethereum, which serves as the **hub** of the Ethereum ecosystem. Applications directly deployed on Ethereum, like Uniswap, are not considered L2s but rather dApps on L1.
+
+
+LAYER -2 -------------------
+
+
+A **Layer 2** is any application built on outside an L1 blockchain that _hooks back into it_. There are different types of Layer 2, 
+for example **Chainlink**, a decentralized Oracle networks and event indexing networks like **The Graph**, which enable applications to access on-chain data. But the most popular type of L2 is the **rollup**, or **L2 chain**.
+
+
+Rollups - 
+**Rollups** are L2 scaling solutions that enable to increase the number of transactions on Ethereum by bundling multiple transactions into one, reducing gas costs.
+advantages -
+Rollups help solve the blockchain trilemma, which states that a blockchain can only achieve two out of three properties:
+     _decentralization_, _security_, and _scalability_. In the case of Ethereum, **scalability** is sacrificed as it can only process approximately 15 transactions per second. Rollups, on the other hand, aim to enhance scalability without compromising security or decentralization.
+
+
+
+WORING OF ROLLUPS -
+
+1. When a user [submits a transaction](https://docs.zksync.io/zk-stack/concepts/transaction-lifecycle) to a rollup, an **operator** (a node or entity responsible for processing transactions)
+     picks it up, bundles it with other transactions, compresses them, and submits the batch back to the L1 blockchain. This process allows for efficient handling of transactions 
+     as gas costs associated with the transaction, are split among all the users that submitted the transactions in the batch.
+
+2. There are two types of rollups, 
+    Optimistic and Zero-Knowledge rollups. The main difference between the two lies in how each rollup verifies the validity of the transactions.
+
+
+Optimistic rollups Vs Zero Knowledge (zk) rollups -
+
+1. 
+

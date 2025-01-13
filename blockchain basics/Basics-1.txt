@@ -1,0 +1,75 @@
+Bitcoin is the first protocols to use this technology called blockchain.
+Bitcoin - A peer to peer electronic cash system
+Bitcoin white paper was created by satoshi nakamoto
+Bitcoin - called as superior digital store of value
+Bitcoin has planet has certain amounts to buy & sell
+
+Ethereum - extended Bitcoin features by vitalin buterin
+Decentralized agreement - smart contract
+smart contract - set of instructions executed in decentralized way without need of 
+                centralized or 3rd party intermediary. These are codes, embodied on
+                decentralized blockchain platforms.
+Traditional agreement - are set of agreement bet 2 parties in written format, in paper 
+                that can be altered easily.
+
+Bitcoin vs Ethereum - bitcoin used as a store of value, Ethereum as store of value  
+                 and a way to facilitate these decentralized agreements.
+Problem - blockchain need real data to intergrate features in real life use case.  
+          They cant read data from real world, oracle Problem         
+
+Oracle - is any device that connects a deterministic blockchain with off-chain data.
+        For keeping our data decentralized, we have to work with mutiple oracles,
+        handle large computations. Hence, we need decentralized oracle.
+        On-Chain + Off-chain = hybrid smart contract
+        
+Chainlink- decentralized oracle network
+
+Web1: permissionless + open source + static content
+Web2: permissioned web + dynamic content + companies run agreement on their servers
+Web3: permissionless web + dynamic content, decentralized censorship resistant networks
+      run your agreements and code.
+      user owned ecosystems
+
+Note - ### Layer 2 Scaling Solutions
+
+As blockchains grow, they face scaling issues. Layer 2, or L2, solutions have been developed to address this. L2 solutions involve other blockchains hooking into the main blockchain, essentially allowing it to scale. There are two primary types of L2 solutions:
+
+* **Optimistic Rollups:** eg. Optimism, Arbitrum
+* **Zero-Knowledge Rollups:** eg. ZKsync, Polygon ZK EVM
+
+1. **Layer 2**: Layer 2 solutions in web3 are technologies built on top of a blockchain (Layer 1) 
+                to improve its scalability and efficiency. These solutions handle transactions off the main chain, reducing congestion and fees, and then settle the final state on the main chain. _Example_: The Lightning Network for Bitcoin.
+            
+benefit of sc -
+1. Decentralized
+2. Transparency and flexibility
+3. speed a d efficiency
+4. Security and immutability ( to hack, if you have to take over half of codes)
+5. counterparty risk removal
+6. trust minimized agreements
+
+note - many node operators runs blockchain
+
+Transaction fee -> amount paid to the block producer for processing the transaction.
+Gas price -> cost per unit of gas specified for the transaction in ether and gwei. 
+            The higher the gas price, the higher the chances of getting included in
+            the block.
+
+note - when you send a transaction, there is node (minor or validator) depending on network you'r on
+        who gets paid little bit of native currency of blockchain to process that transaction.
+
+note - lets you'r a sending a transaction on Polygon network, they r paid in Maddock (native token of Polygon)
+        toke = currency
+        native token of L2 IS Ethereum
+
+note - more complex transaction, more gas to pay
+note - the more people send transaction at same time, the more expensive gas costs are-
+
+Hash- a hash is a unique, fixed-length string that serves to identify any piece of data.
+         When you input any kind of data into a hash function, it produces a hash.
+         hash algo we use - SHA256
+
+         a hash is a unique, fixed-length string that serves to identify any piece of data. 
+         When you input any kind of data into a hash function, it produces a hash.
+
+**Genesis Block:** This is the first block in a blockchain.

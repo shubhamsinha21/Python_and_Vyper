@@ -1,0 +1,9 @@
+sepolia is L1 testnet or layer 1
+zkSync sepolia is a layer 2 or L2 rollup
+
+zk is a mathematical, cryptographic. no need to understand the working
+
+rollups helps in scale ethereum by processing transactions off chain, bundling them together and then submiting them backto ethereum with some kind
+    of proof which is different depending upon whether it's a optimistic or zkSYnc rollups.
+
+    

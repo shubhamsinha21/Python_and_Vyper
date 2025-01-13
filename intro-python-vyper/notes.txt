@@ -1,0 +1,13 @@
+** The EVM
+
+-> On clicking compile btn, we compile our code to machine readable code
+-> Generally, we compile this in EVM (ethereum virtual machine)
+-> EVM provides set of rules or a set of standards of what compiled smart contract should look like
+-> in machine readable code
+-> If anyone follow these rules, they are called as EVM compatible.
+
+# Examples of EVM compatible chains -
+1. Ethereum 2. Arbitrium 3. Optimism 4. Polygon 5. Zksync
+
+Note - It's Important to check the code is compatible to environment/chain being deployed.
+
